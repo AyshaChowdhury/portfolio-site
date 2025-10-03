@@ -79,8 +79,15 @@ nav ul li a:hover {
     background-color: rgb(45, 43, 0);
 }
 
+#footer {
+  background-color: #25095D;
+  color: #E76E41;
+  height: 80px;
+  padding: 0px 30px;
+}
 
-/* The right-column ID style is floated right */
+/*HOME PAGE*/
+
 #right-column {
     float: right;
     width: 60%;
@@ -91,7 +98,7 @@ nav ul li a:hover {
 }
 
 .welcome-text{
-    font-size: 90%;
+    font-size: 20px;
     padding-top: 150px;
 }
 
@@ -111,17 +118,66 @@ nav ul li a:hover {
     border: 2px solid black;
 }
 
+/* ABOUT ME PAGE */
 
-#footer {
-  background-color: #25095D;
-  color: #E76E41;
-  height: 80px;
-  padding: 0px 30px;
+#about-left-column {
+    float: left;
+    width: 40%;
+    height: 500px;
+    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
+    text-align: right;
+    color: #ffffff;
+    box-sizing: border-box;
 }
 
-#banner h1 {
-    color: white;
+
+.about-text h1{
+    font-size: 30px;
+    padding-top: 150px;
 }
+
+.about-text p {
+  line-height: 1.5;
+}
+
+
+#about-right-column {
+  float: right;
+  width: 60%;
+  height: 500px;
+  background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
+  text-align: center;   /* centers inline elements */
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+#about-right-column img{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+/* Image styling */
+#about-right-column img {
+  width: 45%;
+  max-width: 250px;
+  height: auto;
+  border: 2px solid #000000;
+  display: inline-block; /* ensures image and video can sit side by side */
+  vertical-align: middle; /* align them nicely */
+  margin-right: 10px;
+}
+
+/* Video styling */
+#about-right-column video {
+  width: 45%;
+  max-width: 300px;
+  border: 2px solid #070707;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /* Advanced Web design relies on class or ID styles, never tables */
 .box {
@@ -179,7 +235,6 @@ nav ul li a:hover {
     width: 90%;
     max-width: 350px;
     height: auto;
-    display: inline-block;    
 }
 
 .contact-input {
@@ -202,4 +257,18 @@ nav ul li a:hover {
   color: #ffffff;
   border-radius: 5px;
   background: linear-gradient(45deg,#E76E41, #F4AF76);
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #F4AF76, #E76E41); /* reverse gradient */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* Active (click) effect */
+.contact-form button:active {
+  transform: scale(0.95); /* press-down feel */
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  opacity: 0.9;
 }
