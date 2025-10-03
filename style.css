@@ -3,14 +3,14 @@
 /*My colour combinations
 #25095D 
 #150B59
-#3A1CA6
 #E76E41
 #F4AF76
+#490B59
 */
 
 body {
     font-family: "Alan Sans", sans-serif;
-    background: -webkit-linear-gradient(top, #25095D 0%, #3A1CA6 100%);
+    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
     padding: 0px;
     margin: 0px;
 }
@@ -85,7 +85,7 @@ nav ul li a:hover {
     float: right;
     width: 60%;
     height: 500px;
-    background: -webkit-linear-gradient(top, #25095D 0%, #3A1CA6 100%);
+    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
     color: #ffffff;
     text-align: left;
 }
@@ -98,7 +98,7 @@ nav ul li a:hover {
 #left-column {
   float: left;
   width: 40%;
-  background: -webkit-linear-gradient(top, #25095D 0%, #3A1CA6 100%);
+  background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
   text-align: center;          /* centers inline content like image */
   padding: 46px 0;             /* adds top/bottom spacing */
   box-sizing: border-box;
@@ -113,7 +113,7 @@ nav ul li a:hover {
 
 
 #footer {
-  background-color: #3A1CA6;
+  background-color: #25095D;
   color: #E76E41;
   height: 80px;
   padding: 0px 30px;
