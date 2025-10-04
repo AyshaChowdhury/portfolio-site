@@ -5,8 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width">
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
 
+    <!-- Google Fonts setup for custom typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
@@ -15,8 +17,9 @@
 </head>
 
 <body>
-    <header>
+<header>
         <h1 id="logo"> Aysha Chowdhury </h1>
+        <!-- Navigation links to all pages -->
         <nav>
             <ul>
                 <li> <a href="index.html"> Home </a></li>
@@ -28,25 +31,23 @@
     </header>
 
 
-    <!--Right column image + video-->
+    <!-- Right column showing my image and video -->
     <div id="about-right-column">
         <img src="AyshaChowdhury.jpg" alt="Aysha Chowdhury">
-        <video 
-                id="video" 
-                controls width="320" 
-                height="240" 
-                poster="AyshaChowdhury.jpg" 
-                preload="auto">
-                    <source src="on_record.mp4" type="video/mp4">
-                </video>
-                <br> 
-                <button onclick="playPause()">Play or Pause the video</button>
+        <!-- Video element with controls, poster image for preview -->
+        <video id="video" controls width="320" height="240" poster="AyshaChowdhury.jpg" preload="auto">
+            <source src="on_record.mp4" type="video/mp4">
+        </video>
+        <br>
+        <!-- Button to play/pause the video -->
+        <button onclick="playPause()">Play or Pause the video</button>
     </div>
 
-    <!--Left column text-->
+    <!-- Left column with personal introduction -->
     <div id="about-left-column">
         <div class="about-text">
 
+            <!-- Article content -->
             <article>
                 <h2> So.. Who am I? </h2>
                 <section>
@@ -66,6 +67,7 @@
 
     <div class="clear"></div>
 
+    <!-- Footer with contact info and copyright -->
     <footer id="footer">
         <p>© 2025 Aysha Chowdhury | aysha.chowdhury@ontariotechu.net</p>
     </footer>
