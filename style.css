@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* CSS Document */
+
+/* CSS Document - DESKTOP VERSION (960px and wider) */
 /*My colour combinations
 #25095D 
 #150B59
@@ -17,14 +18,15 @@ body {
 
 header {
   background-color: #25095D;
-  padding: 32px 30px;     /* space inside the header */
+  padding: 32px 30px; /* space inside the header */
   color: white;
-  overflow: auto;         /* prevents float issues */
+  overflow: auto; /* prevents collapsing when elements float */
 }
 
+/* logo/name in the header */
 #logo {
   display: inline-block;
-  font-size: 30px;        /* heading size */
+  font-size: 30px;      
   font-weight: bold;
   color: #E76E41;
   margin: 0;
@@ -32,33 +34,34 @@ header {
 }
 
 nav {
-  float: right;           /* push nav to right side */
+  float: right; /* push nav to right side */
 }
 
-/* Remove bullets and extra spacing */
+/* remove bullets and extra spacing */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Display links side by side */
+/* display links side by side */
 nav ul li {
   display: inline-block;
   margin-top: 15px;
-  margin-left: 15px;      /* space between buttons */
+  margin-left: 15px; /* space between buttons */
 }
 
+/* style the navigation links like buttons */
 nav ul li a {
   text-decoration: none;
   color: #E76E41;
-  padding: 8px 16px;           /* button shape */
+  padding: 8px 16px; /* button shape */
   background-color: transparent;
-  border: 2px solid #fafafa;   /* gold border */
+  border: 2px solid #fafafa;
   opacity: .7;
   border-radius: 5px;
   font-size: 16px;
-  transition: 0.3s ease;
+  transition: 0.3s ease;/* smooth transition on hover */
 }
 
 /* Hover effect */
@@ -76,31 +79,37 @@ nav ul li a:hover {
   padding: 0px 30px;
 }
 
+
+
 /*HOME PAGE*/
 
+/* right side: welcome text */
 #right-column {
     float: right;
     width: 60%;
     height: 500px;
-    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
+    background: linear-gradient(top, #25095D 0%, #490B59 100%);
     color: #fafafa;
     text-align: left;
 }
 
+/* centers the welcome message vertically */
 .welcome-text{
     font-size: 20px;
     padding-top: 150px;
 }
 
+/* left side: main image */
 #left-column {
   float: left;
   width: 40%;
-  background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
-  text-align: center;          /* centers inline content like image */
-  padding: 46px 0;             /* adds top/bottom spacing */
+  background: linear-gradient(top, #25095D 0%, #490B59 100%);
+  text-align: center;    /* centers inline content like image */
+  padding: 46px 0;       /* adds top/bottom spacing */
   box-sizing: border-box;
 }
 
+/* style for the home page image */
 #left-column img{
     width: 100%;
     max-width: 400px;
@@ -114,11 +123,12 @@ nav ul li a:hover {
 
 /* ABOUT ME PAGE */
 
+/* left column for text content */
 #about-left-column {
     float: left;
     width: 40%;
     height: 500px;
-    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
+    background: linear-gradient(top, #25095D 0%, #490B59 100%);
     text-align: right;
     color: #ffffff;
     box-sizing: border-box;
@@ -134,13 +144,13 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
-
+/* right column for photo and video */
 #about-right-column {
   float: right;
   width: 60%;
   height: 500px;
-  background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
-  text-align: center;   /* centers inline elements */
+  background: linear-gradient(top, #25095D 0%, #490B59 100%);
+  text-align: center;  /* centers inline elements */
   padding-top: 40px;
   box-sizing: border-box;
 }
@@ -178,6 +188,8 @@ nav ul li a:hover {
 
 /* PROJECTS PAGE */
 
+
+/* heading for projects section */
 #projects-section h2{
   color: #fafafa;
   font-size: 30px;
@@ -190,11 +202,14 @@ nav ul li a:hover {
 }
 
 
+/* container that holds all project boxes */
 .project-gallery {
   text-align: center; /* centers the inline-block boxes */
   margin-top: 20px;
 }
 
+
+/* individual project box */
 .box {
   height: auto;               /* let it grow with content */
   width: 250px;
@@ -243,10 +258,12 @@ nav ul li a:hover {
 
 /*CONTACT PAGE*/
 
+
+/* left side contains the form */
 #contact-left-column {
   float: left;
   width: 60%;
-  background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);        
+  background: linear-gradient(top, #25095D 0%, #490B59 100%);        
   text-align: center;             /* adds top/bottom spacing */
   color: #ffffff;
   box-sizing: border-box;
@@ -256,11 +273,12 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
+/* right side has the image */
 #contact-right-column {
     float: right;
     width: 40%;
     height: 500px;
-    background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
+    background: linear-gradient(top, #25095D 0%, #490B59 100%);
     text-align: center;
     vertical-align: middle;
     padding-top: 50px;
@@ -274,21 +292,22 @@ nav ul li a:hover {
     height: auto;
 }
 
+
+/* style all form inputs and textarea */
 .contact-input {
   width: 80%;
   max-width: 350px;
   height: 45px;
-  display: block;        /* ensures they sit one below the other */
+  display: block;        /* ensures they sit vertically */
   margin: 10px auto;     /* centers inputs horizontally */
   border: none;
   padding-left: 10px;
   border-radius: 5px;
   font-weight: 500;
-  color: rgb(99, 69, 29);
 }
 
-.contact-form button{
-  align-items: center;
+/* Submit button styling with angle gradient */
+#contact-left-column button{
   padding: 15px 30px;
   font-size: 15px;
   color: #ffffff;
@@ -297,15 +316,21 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+/* button gets bigger on hover */
 .contact-form button:hover {
   transform: scale(1.05);
   background: linear-gradient(45deg, #F4AF76, #E76E41); /* reverse gradient */
   box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 }
 
-/* Active (click) effect */
+/* button shrinks when clicked for tactile feedback */
 .contact-form button:active {
   transform: scale(0.95); /* press-down feel */
   box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
   opacity: 0.9;
+}
+
+
+.clear {
+    clear: both;
 }

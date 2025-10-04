@@ -4,11 +4,20 @@
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Makes the page responsive on different devices -->
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
 
-        <!-- Google Fonts setup for custom typography -->
+         <!-- makes the page responsive on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Desktop styles -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <!-- Tablet styles -->
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">
+        <!-- Mobile styles -->
+        <link href="style-mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+
+        
+
+        <!-- google Fonts setup for custom typography -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
