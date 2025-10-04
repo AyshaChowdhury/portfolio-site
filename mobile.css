@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/* CSS Document - MOBILE VERSION (480px and smaller) */
+
+/* 
+MOBILE COLOR SCHEME 
+#000000 
+#0D0221 
+#FF5722 
+#FFC107 
+#1A0A3D 
+*/
+
+
+body {
+    font-family: "Alan Sans", sans-serif;
+    background: linear-gradient(to bottom, #000000 0%, #0D0221 100%);
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff; /* maximum contrast white text */
+}
+
+/* remove top margin from all headings for vertical stacking */
+h1, h2, h3, h4, h5, h6, p, li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+header {
+    background-color: #000000;
+    padding: 15px 20px;
+    color: white;
+    overflow: auto;
+}
+
+/* logo centered and larger for mobile */
+#logo {
+    display: block; /* full width block */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF5722; 
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* navigation stacks vertically for mobile */
+nav {
+    float: none;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* stack navigation items vertically */
+nav ul li {
+    display: block; /* full width buttons */
+    margin: 8px 0;
+}
+
+/* large, finger-friendly navigation buttons */
+nav ul li a {
+    text-decoration: none;
+    color: #FFC107; 
+    padding: 15px 20px; 
+    background-color: rgba(255, 87, 34, 0.25);
+    border: 2px solid #FFC107;
+    opacity: 1;
+    border-radius: 10px;
+    font-size: 20px; 
+    transition: 0.3s ease;
+    display: block; /* full width */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* active state when user taps the button */
+nav ul li a:active {
+    background-color: #FF5722;
+    color: #000000;
+    border-color: #FF5722;
+    box-shadow: 4px 4px 10px rgba(255, 87, 34, 0.6);
+    transform: scale(0.98); /* press-down */
+}
+
+
+#footer {
+    background-color: #000000;
+    color: #FFC107;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+/* HOME PAGE */
+
+/* everything stacks vertically */
+#right-column {
+    float: none;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #0D0221 0%, #1A0A3D 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.welcome-text {
+    font-size: 18px; 
+    padding-top: 10px;
+}
+
+.welcome-text h1 {
+    font-size: 26px; 
+    color: #FFC107;
+}
+
+#left-column {
+    float: none;
+    width: 100%;
+    background: linear-gradient(to bottom, #000000 0%, #0D0221 100%);
+    text-align: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+/* mobile images are smaller */
+#left-column img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    border: 3px solid #FF5722;
+}
+
+
+
+/* ABOUT ME PAGE */
+
+/* text section stacks first */
+#about-left-column {
+    float: none;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #0D0221 0%, #1A0A3D 100%);
+    text-align: center; /* centered for mobile */
+    color: #ffffff;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.about-text h2 {
+    color: #FFC107;
+    font-size: 24px;
+}
+
+.about-text h4 {
+    color: #FF5722;
+    font-size: 18px;
+}
+
+.about-text p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* media section stacks below */
+#about-right-column {
+    float: none;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #000000 0%, #0D0221 100%);
+    text-align: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+/* photo takes full width */
+#about-right-column img {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    border: 3px solid #FF5722;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* video also takes full width */
+#about-right-column video {
+    width: 90%;
+    max-width: 100%;
+    border: 3px solid #FF5722;
+    display: block;
+    margin: 20px auto;
+}
+
+/* extra large button for mobile tapping */
+#about-right-column button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #FF5722;
+    color: #ffffff;
+    border: 2px solid #FFC107;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* active state when button is tapped */
+#about-right-column button:active {
+    background-color: #FFC107;
+    color: #000000;
+    box-shadow: 4px 4px 10px rgba(255, 193, 7, 0.6);
+    transform: scale(0.97); /* press-down */
+}
+
+
+
+
+/* PROJECTS PAGE */
+
+#projects-section h2 {
+    color: #FFC107;
+    font-size: 26px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#projects-section > p {
+    color: #ffffff;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.project-gallery {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+/* project boxes stack in single column */
+.box {
+    height: auto;
+    width: 90%; /* single column for mobile */
+    min-height: 120px;
+    background-color: rgba(255, 87, 34, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: block; /* stacks vertically */
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid #1A0A3D;
+    opacity: 1;
+}
+
+.box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #FF5722;
+}
+
+/* active state when user taps a project box */
+.box:active {
+    background: radial-gradient(ellipse at center, #FFC107 0%, #FF5722 20%, #0D0221 100%);
+    border-color: #FFC107;
+    box-shadow: 5px 5px 15px rgba(255, 193, 7, 0.5);
+    transform: scale(0.98); 
+}
+
+.box h3 {
+    color: #FFC107;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* CONTACT PAGE */
+
+/* form section stacks first */
+#contact-left-column {
+    float: none;
+    width: 100%;
+    background: linear-gradient(to bottom, #0D0221 0%, #1A0A3D 100%);
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.contact-text {
+    font-size: 24px;
+}
+
+.contact-text h2 {
+    color: #FFC107;
+}
+
+/* image section stacks below */
+#contact-right-column {
+    float: none;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #000000 0%, #0D0221 100%);
+    text-align: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+#contact-right-column img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* large form inputs  */
+.contact-input {
+    width: 90%;
+    max-width: 100%;
+    height: 55px; /* extra large touch targets */
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #FF5722;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* extra large submit button */
+#contact-left-column button {
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FF5722, #FFC107);
+    cursor: pointer;
+    border: none;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
+
+/* active state when button is tapped */
+#contact-left-column button:active {
+    transform: scale(0.97); /* Press-down effect */
+    background: linear-gradient(45deg, #FFC107, #FF5722);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* checkbox and label styling */
+#contact-left-column input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#contact-left-column label {
+    font-size: 16px;
+    color: #FFC107;
+}
+
+.clear {
+    clear: both;
+}
