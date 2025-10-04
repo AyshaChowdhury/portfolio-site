@@ -25,7 +25,7 @@ This project is my personal portfolio built using HTML5 and CSS3.
 ## Home Page
 For my Home Page, I decided to use a **linear gradient background** because it blends nicely with the main image and adds a modern touch. The gradient also helps tie the whole page together visually without making it look too flat or plain.
 
-The **image** I chose gives off a **playful and futuristic vibe**, which really connects with my personality. I liked how it shows someone brainstorming with colorful ideas all around. It represents how I enjoy thinking creatively and finding new ways to solve problems.
+The **image** I chose gives off a playful and futuristic vibe, which really connects with my personality. I liked how it shows someone brainstorming with colorful ideas all around. It represents how I enjoy thinking creatively and finding new ways to solve problems.
 
 I picked a **font** that matches this fun, imaginative tone. It feels approachable and friendly, which is the kind of energy I want my portfolio to have.
 
@@ -33,20 +33,36 @@ For the **font color**, I went with a shade that really pops against the purple 
 
 When choosing my **color palette**, I pulled inspiration from the image itself — mainly purples, oranges, and yellows. I liked how these colors work together to give a bright yet balanced look, keeping the page both engaging and easy on the eyes.
 
+---
+
+## About Me Page
 
 ---
 
+## Projects Page
+
+For my Projects page, I wanted to showcase a few of the academic and professional projects I’ve worked on. I used a gallery-style layout with individual project boxes, each containing an image, a title, and a short description.
+
+To organize the layout, I used a **.project-gallery class** as a container for all the project boxes. This made it easy to center the boxes, add spacing between them, and keep everything aligned across different screen sizes. Using a single container also helped me apply consistent styles to the entire gallery, so the page looks cohesive and polished.
+
+The **hover effect** on each project box adds a bit of interactivity, making the page feel dynamic. It also helps highlight each project as I explore the gallery.
+
+I chose images for each project that is visually engaging and matches the layout of my portfolio. For the design, I kept the same color palette and fonts as the rest of the website to maintain a cohesive look and feel. The page is fully responsive, so it looks good on desktop, tablet, and mobile devices. The text descriptions are concise and informative, so anyone visiting the page can understand the scope and impact of each project at a glance.
+
+Overall, I designed this page to feel organized, approachable, and visually interesting, giving viewers an easy way to browse my work and get a sense of my skills.
+
+---
 ## Contact Page
 
 For my Contact page, I wanted to make it simple, clear, and easy to use while keeping the same color theme as the rest of the website. I divided the layout into two columns - one for the image and one for the form.
 
-The **image** on the right side represents communication and connection. It fits the overall aesthetic of my site and helps the page feel more lively and engaging.
+The image on the right side represents communication and connection. It fits the overall aesthetic of my site and helps the page feel more lively and engaging.
 
 On the **left side**, I added a “Get in Touch” heading followed by a form that allows users to contact me directly. I included input fields for name, email, phone number, and a message box, as well as an optional checkbox for joining my mailing list. I used the `mailto:` action so that the form opens the user’s email client when they click submit.
 
 I made sure that all fields are **required** so users can’t submit an incomplete form.
 
-The **Submit button** uses a gradient that blends orange and peach tones, similar to the colors used in my navigation hover effects. This helps maintain consistency..
+The **Submit button** uses a gradient that blends orange and peach tones, similar to the colors used in my navigation hover effects. This helps maintain consistency.
 
 Overall, I designed this page to feel warm, welcoming, and user-friendly.
 
