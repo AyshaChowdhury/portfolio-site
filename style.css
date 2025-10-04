@@ -69,16 +69,6 @@ nav ul li a:hover {
 }
 
 
-
-/* The wrapper ID style is used with a div tag to provide a 960px wide page */
-#wrapper {
-    width: 1200px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(45, 43, 0);
-}
-
 #footer {
   background-color: #25095D;
   color: #E76E41;
@@ -93,7 +83,7 @@ nav ul li a:hover {
     width: 60%;
     height: 500px;
     background: -webkit-linear-gradient(top, #25095D 0%, #490B59 100%);
-    color: #ffffff;
+    color: #fafafa;
     text-align: left;
 }
 
@@ -117,6 +107,10 @@ nav ul li a:hover {
     height: 400px;
     border: 2px solid black;
 }
+
+
+
+
 
 /* ABOUT ME PAGE */
 
@@ -179,32 +173,75 @@ nav ul li a:hover {
 }
 
 
-/* Advanced Web design relies on class or ID styles, never tables */
-.box {
-    height: 100px;
-    width: 100px;
-    float: left;
-    background-color: tan;
-    margin: 15px;
-    padding: 15px;
-    opacity: .5;
-    border-radius: 100px;
+
+
+
+/* PROJECTS PAGE */
+
+#projects-section h2{
+  color: #fafafa;
+  font-size: 30px;
+  padding-left: 80px;
 }
 
-/* The following pseudo-class applies to the box class when in a hovered state */
-.box:hover {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+1,1e5799+1,1e5799+5,7db9e8+100 */
-    background: radial-gradient(ellipse at center, #1e5799 1%, #1e5799 1%, #1e5799 5%, #7db9e8 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+#projects-section > p{ /* used > p so that the padding only affects the projects-section and not the box paragraphs*/
+  color: #fafafa;
+  padding-left: 80px;
+}
 
-    background-color: white;
+
+.project-gallery {
+  text-align: center; /* centers the inline-block boxes */
+  margin-top: 20px;
+}
+
+.box {
+  height: auto;               /* let it grow with content */
+  width: 250px;
+  background-color: transparent;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: top;        /* keeps boxes aligned at top */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Image styling inside each box */
+.box img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.box:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f4af76+0,e76e41+20,150b59+100 */
+  background: radial-gradient(ellipse at center,  #f4af76 0%,#e76e41 20%,#150b59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     opacity: 1;
 }
 
-/* This clear class style terminates float */
+/* Project title */
+.box h3 {
+  color: #f4af76;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.box p{
+  color: #fafafa;
+  font-size: 12px;
+}
+
 .clear {
     clear: both;
 }
+
+
+
+
+
+/*CONTACT PAGE*/
 
 #contact-left-column {
   float: left;
